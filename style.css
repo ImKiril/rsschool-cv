@@ -1,0 +1,126 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+  
+body {
+    position: relative;
+    max-width: 1920px;    
+    min-width: 320px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    background-color: #d9f7fc;
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    min-width: 320px;
+  }
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    background-color: #b6eaf2;
+}
+
+.site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    min-width: 50%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-navigation-link {
+    display: inline-block;
+    position: relative;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .site-navigation-link::after { 
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #ff7931;
+    transition: 0.3s ease 0s, left 0.3s ease 0s;
+  }
+  
+.site-navigation-link:hover::after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me .avatar {
+    float: left;
+    width: 20%;
+    height: 20%;
+    padding-right: 10px;
+}
+
+.about-me p {
+    font-style: italic;
+}
+
+.about-me b {
+    font-weight: bold;
+}
+
+main section {    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 100px;
+    padding: 20px 30px;
+    background-color: #8de4f1;
+    opacity: 0.8;
+}
+
+main section:hover {    
+    opacity: 1;
+}
+
+main img {
+    width: 20%;
+    height: 20%;    
+}
+
+.main-footer {    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+    background-color: #b6eaf2;
+}
+
+.main-footer div {
+    flex-direction: row;
+    justify-content: space-between;
+}
